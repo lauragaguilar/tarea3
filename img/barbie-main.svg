@@ -1,0 +1,11 @@
+<svg width="720" height="900" viewBox="0 0 720 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="720" height="900" rx="48" fill="#FDE7F5"/>
+  <rect x="60" y="70" width="600" height="710" rx="40" fill="#FFBEDD"/>
+  <circle cx="360" cy="230" r="110" fill="#F7B5DE"/>
+  <rect x="178" y="330" width="364" height="390" rx="52" fill="#FF89C7"/>
+  <path d="M180 380C220 300 480 300 540 380V560H180V380Z" fill="#FFD5E9"/>
+  <path d="M220 430H500" stroke="#FFFFFF" stroke-width="34" stroke-linecap="round"/>
+  <path d="M220 490H500" stroke="#FFFFFF" stroke-width="34" stroke-linecap="round"/>
+  <path d="M220 550H500" stroke="#FFFFFF" stroke-width="34" stroke-linecap="round"/>
+  <text x="50%" y="860" text-anchor="middle" fill="#5C255D" font-family="Arial, sans-serif" font-size="40">Totally Hair</text>
+</svg>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Identifica tu Barbie</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="brand">
+        <span class="brand-mark">B</span>
+        <div>
+          <p class="brand-label">Identifica tu</p>
+          <h1 class="brand-name">Barbie</h1>
+        </div>
+      </div>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a href="#">Inicio</a>
+        <a href="#">Mis Barbies</a>
+        <a href="#">FAQ</a>
+        <a href="#">Contacto</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero-card">
+        <div class="hero-copy">
+          <p class="eyebrow">Sube una foto de tu Barbie</p>
+          <h2>Añade una foto para identificar tu muñeca.</h2>
+
+          <div class="upload-card">
+            <div class="dropzone" id="dropzone" tabindex="0">
+              <div class="dropzone-icon">&#8679;</div>
+              <strong>Arrastra tu foto aquí</strong>
+              <span>o <button class="link-button" id="uploadButton">Haz clic para subir</button></span>
+              <!-- accept: jpg, png y gif -->
+              <input type="file" id="fileInput" accept="image/jpeg,image/png,image/gif" hidden />
+            </div>
+            <p class="upload-hint">Acepta archivos JPG, PNG o GIF.</p>
+          </div>
+        </div>
+
+        <div class="hero-preview">
+          <div class="preview-card">
+            <img src="img/barbie-main.svg" alt="Foto de Barbie" id="previewImage" />
+          </div>
+          <button class="primary-button" id="identifyButton">Identificar Barbie</button>
+        </div>
+      </section>
+
+      <!-- RESULTADOS DEL AGENTE IA -->
+      <section class="results-section hidden" id="resultsSection">
+        <div class="results-header">
+          <div>
+            <p class="eyebrow">Resultados de tu Barbie</p>
+            <h3 id="resultName">Cargando...</h3>
+            <p class="result-year" id="resultYear"></p>
+            <p class="result-description" id="resultDescription"></p>
+            <div id="resultExtra" class="result-extra"></div>
+          </div>
+          <div class="result-details">
+            <h4>Características de la Muñeca</h4>
+            <ul>
+              <li><strong>Cabello:</strong> <span id="resultHair">—</span></li>
+              <li><strong>Outfit:</strong> <span id="resultOutfit">—</span></li>
+              <li><strong>Accesorios:</strong> <span id="resultAccessories">—</span></li>
+              <li><strong>Curiosidad:</strong> <span id="resultFact">—</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="gallery-card">
+          <h4>Imágenes de Referencia</h4>
+          <!-- La galería se genera dinámicamente desde script.js -->
+          <div class="gallery-grid" id="galleryGrid"></div>
+          <button class="secondary-button">Ver más detalles</button>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- config.js cargado ANTES de script.js para que AZURE_CONFIG esté disponible -->
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
